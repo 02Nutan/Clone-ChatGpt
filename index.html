@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    
+
+    <title>ChatGPT UI</title>
+</head>
+<body>
+    <div class="container">
+        <!-- Update the HTML structure to include the hide/show button -->
+        <div class="left-pane">
+            <div class="button-container">
+                <button class="chat-button " onclick="createNewChat() "><i class="fas fa-plus"></i> New Chat</button>
+                <button class="hide-bar-button"><i class="fas fa-bars"></i></button>
+            </div>
+            
+                        
+            <div class="existing-chats">
+                <!-- Dummy chat list -->
+                <div class="chat">New Chat</div>
+                <div class="chat">New Chat</div>
+                <div class="chat">New Chat</div> 
+            </div>
+            <div class="bottom">
+                <div class="upgrade-section">
+                    <div class="profile-icon"><i class="fas fa-user-circle"></i></div>
+                    <div class="upgrade-text">Upgrade to Plus</div>
+                </div>
+                <div class="profile-section">
+                    <div class="icon">
+                        NP
+                    </div>
+                    <div class="profile-info">
+                        <div class="user-name"></div>Nutan Parande
+                        <div class="three-dots-icon"><i class="fas fa-ellipsis-v"></i></div>
+                    </div>
+                </div>
+         </div>
+        </div>
+         <div class="right-pane">
+            <div class="open-bar-button"><i class="fas fa-bars"></i></div> <!-- Open Bar button with icon-only -->
+            <div class="top-center-buttons">
+                <button class="floating-button"><i class="fas fa-bolt" style="color: green;"></i>GPT-3.5</button>
+                <button class="floating-button " id="float" style="background-color: rgb(32,33,35);border-color:rgb(32,33,35)"><i class="fas fa-star" style="color: rgb(116, 70, 116);"></i><p>GPT-4</p><i class="fas fa-lock" style="color: grey;"></i></button>
+            </div>
+            <div class="chatgpt-name">ChatGPT</div>
+            
+            <!-- Add four boxes above the input box -->
+            <div class="box-container">
+                <!-- Left column with two boxes -->
+                <div class="column">
+                    <div class="box">Tell me a fun fact</div>
+                    <div class="box">Show me a code snippet</div>
+                </div>
+                <!-- Right column with two boxes -->
+                <div class="column">
+                    <div class="box">Make up a story</div>
+                    <div class="box">compare design principles</div>
+                </div>
+            </div>
+            <div class="message-display">
+                <!-- Message display area -->
+            </div>
+            <div class="message-input-box">
+                <input type="text" placeholder="send a message" class="message-input" id="message-input">
+                <button class="send-button" id="send-button"><i class="fas fa-paper-plane"></i></button>
+            </div>
+            <div class="question-icon"><i class="fas fa-question-circle"></i></div>
+            
+            
+        </div>
+    </div>
+
+        </div>
+        
+        <div class="top-left-button" style="display: none;"><button>Hide</button></div>
+
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
